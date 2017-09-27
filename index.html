@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src='js/index.js'></script>
+	<script src='js/jquery-3.2.1.min.js'></script>
+
+
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+
+    
+                <div onclick="doPlay()">
+                    <img id="music" name="imgState" class="imgLocation imgScroll" src="imgs/music.png" >
+                    <audio id="startMusic" loop="loop">
+                            <source src="videos/music.mp3">
+                    </audio>
+                </div>
+
+
+
+
+        <div class="swiper-wrapper">
+        <!-- 这是第一屏 -->
+            <div class="swiper-slide one">
+                <div class="one_1 ">
+                    <!-- <div onclick="doPlay()">
+                        <img id="music" name="imgState" class="imgLocation imgScroll" src="imgs/music.png" >
+                            <audio id="startMusic" loop="loop">
+                            <source src="videos/music.mp3">
+                            </audio>
+                    </div> -->
+                    <div class="m1 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+                        PERSONAL RESUME
+                    </div>
+                    <div class="m2 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.4s">个人简历</div>
+                    <div class="m3">
+                        <img src="imgs/resume.png" class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+                    </div>
+                    <div class="m4 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.8s">求职前端工程师</div>
+                    <div class="m5 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">希望能给您带来惊喜</div>
+                    <div class="m6 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.7s">进一步了解</div>
+                    <div class="m7"></div>
+                </div> 
+                <img class="one-img" src="imgs/bg5.jpg">
+            </div>
+
+            <!-- 这是第二屏 -->
+            <div class="swiper-slide two">
+                <!-- <div  onclick="doPlay()">
+                        <img name="imgState" class="imgLocation imgScroll" src="imgs/music.png" >
+                      
+                </div> -->
+                <div class="two_bg">
+                    <div class="two_tittle ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                            基本信息
+                    </div>
+                    <div class="two_contain ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                            <p>姓名:itany</p>
+                            <p>民族:汉</p>
+                            <p>籍贯:北京</p>
+                            <p>年龄：26</p>
+                            <p>学历：博士</p>
+                            <p>政治面貌：中共党员</p>
+                            <p>毕业院校：网博优壹</p>
+                            <p>爱好：旅游，运动，阅读</p>
+                    </div>
+                    <div class="two_img ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                        <img src="imgs/1.jpg">
+                    </div>
+                </div>
+               
+                <div class="two_buttom ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s"></div>
+            </div>
+
+            <!--  这是第三屏  -->
+            <div class="swiper-slide three">
+                <!--  <div onclick="doPlay()">
+                        <img name="imgState" class="imgLocation imgScroll" src="imgs/music.png" >
+                         
+                </div> -->
+                <div class="three-title ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.2s">专业技能
+                </div>
+               
+                <div class="three-img1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s"><img src="imgs/skill1.png" alt=""></div>
+                <div class="three-contain1 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">原生移动App开发</div>
+
+                <div class="three-img2 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s"><img src="imgs/skill2.png" alt=""></div>
+                <div class="three-contain2 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.8s">微信公共平台开发</div>
+
+                <div class="three-img3 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s"><img src="imgs/skill3.png" alt=""></div>
+                <div class="three-contain3 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">HTML5+CSS3应用</div>
+
+                <div class="three-img4 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.2s"><img src="imgs/skill4.png" alt=""></div>
+                <div class="three-contain4 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.2s">Node.JS</div>
+                    
+
+                <div class="three-img5 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.5s"><img src="imgs/skill5.png" alt=""></div>
+                <div class="three-contain5 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.5s">angular.JS</div>
+
+                <div class="three-buttom"></div>
+            </div>
+
+            <!-- 这是第四屏 -->
+            <div class="swiper-slide four">
+                <!-- <div onclick="doPlay()">
+                        <img name="imgState" class="imgLocation imgScroll" src="imgs/music.png" >
+                       
+                </div> -->
+                <div class="four-title ani" swiper-animate-effect="fadeIn" swiper-animate-duration="5s" swiper-animate-delay="0.4s">学习及工作经历</div>
+                <div class="four-containLeft">
+                    <div class="four-containLeft1 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="0.3s">2012.07-2014.03 某某单位</div>
+                    <div class="four-containLeft2 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="2s">2014.03-2015.03 某某单位 </div>
+                    <div class="four-containLeft3 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="3s">2015.03-2016.09 某某单位</div>
+                    <div class="four-containLeft4 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="5s">2016.09-2017.07 某某单位</div>
+                </div>
+                <!-- 下面是中间的一条线 -->
+               <div class="cen">
+                        <div class="line " id="changeLine"></div>
+                        <div class="circle1 circle ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.7s" swiper-animate-delay="0.3s"></div>
+                        <div class=" circle2 circle ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.7s" swiper-animate-delay="2s"></div>
+                        <div class=" circle3 circle ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.7s" swiper-animate-delay="3s"></div>
+                        <div class=" circle4 circle ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.7s" swiper-animate-delay="5s"></div>
+                       
+                </div>
+                    
+                <div class="four-right">
+                   <div class="four-right1 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.7s" swiper-animate-delay="0.3s">某某学历</div> 
+                   <div class="four-right2 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.7s" swiper-animate-delay="2s">某某学历</div> 
+                   <div class="four-right3 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.7s" swiper-animate-delay="3s">某某学历</div> 
+                   <div class="four-right4 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.7s" swiper-animate-delay="5s">前段开发工程师</div> 
+
+                </div>
+
+                <div class="four-bottom"></div>
+            </div>
+
+            <!-- 这是第五屏 -->
+            <div class="swiper-slide five">
+                <!-- <div onclick="doPlay()">
+                        <img name="imgState" class="imgLocation imgScroll" src="imgs/music.png" >
+                 
+                </div> -->
+                <div class="five-contact ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s">联系方式</div>
+                <div class="five-detail ani" swiper-animate-effect="flipInY" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+
+                    Phone:12345678911   <br>  
+                    QQ:123456789<br>  
+                    WeChat:12345678911
+                </div>
+                <div class="five-bottom"></div>
+            </div>
+
+            <!-- 这是第六屏 -->
+            <div class="swiper-slide six">
+               <!--  <div onclick="doPlay()">
+                        <img name="imgState" class="imgLocation imgScroll" src="imgs/music.png" >
+                    
+                </div> -->
+                <div class="six-contain ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s">非常感谢您的观看</div>
+                
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</body>
+</html>

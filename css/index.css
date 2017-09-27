@@ -1,0 +1,600 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/* 这是第一屏 */
+.one{
+    position: relative;
+}
+.one .one_1{
+    /* font-size: 20px;
+    color: red; */
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/* .one .one_1 .music img{
+    width: 40px;
+    /* height: 20px; */
+    /* margin: 10px 10px 0px 350px;
+    position:absolute;
+    top:20px;
+    right:20px; */ 
+   /* animation-name: imageRoll;
+   animation-duration: 4s;
+   animation-timing-function: linear;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+}
+ */
+.imgLocation{
+     width: 40px;
+    /* height: 20px; */
+    /* margin: 10px 10px 0px 350px; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.imgScroll{
+    animation-name: imageRoll;
+   animation-duration: 4s;
+   animation-timing-function: linear;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes imageRoll{
+    to{transform: rotate(720deg);}
+}
+.one .one_1 .m1 {
+    margin-top:50px; 
+    padding: 3px 80px 20px 80px;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 5px;
+   /*  z-index: 1; */
+}
+.one .one_1 .m2{
+    width: 200px;
+    height: 35px;
+    color: white;
+    font-size: 25px;
+     letter-spacing: 5px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    margin: 10px 105px;
+}
+.one .one_1 .m3 img{
+    width: 200px;
+    /* height: 151px; */
+    position: absolute;
+    top: 150px;
+    left: 110px;
+}
+.one .one_1 .m4{
+    margin: 280px 8px 0 5px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.one .one_1 .m5{
+    margin: 40px 15px 0 7px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.one .one_1 .m6 {
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    background: url('../imgs/known-more.png');
+    background-size: 100% 100%; 
+    margin: 20px 50px;
+  
+}
+.one .one_1 .m7{
+    width: 60px;
+    height: 60px;
+    background: url('../imgs/web-swipe-tip.png'); 
+   background-size: 100% 100%; 
+   margin: 40px 170px; 
+   animation:mymove 2s linear infinite;
+ }
+ @keyframes mymove{
+    from{transform: translate(0px,0px); opacity: 0.3;}
+    to{transform: translate(0px,20px); opacity: 1;}
+ }
+
+.one .one-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(1px);
+}
+
+
+/* 这是第二屏 */
+.two{
+    background: url('../imgs/bg1.png');
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.two_bg{
+    width: 85%;
+    height: 75%;
+    background: url('../imgs/bg3.png');
+    background-size: 100% 100%;
+}
+.two .music2 img{
+    width: 40px;
+    /* height: 20px; */
+    /* margin: 10px 10px 0px 350px; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+   animation-name: imageRoll;
+   animation-duration: 4s;
+   animation-timing-function: linear;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+}
+@keyframes imageRoll{
+    to{transform: rotate(720deg);}
+}
+.two .two_tittle{
+    /* text-align: left; */
+    width:120px;
+    font-size:25px;
+    border:3px dashed #ccc;
+    position:absolute;
+    left:80px;
+    top:150px;
+} 
+.two .two_contain{
+    position:absolute;
+    left:80px;
+    top:200px;
+    text-align:left;
+
+}
+.two .two_img img{
+    width:120px;
+   /*  height:200px; */
+   position:absolute;
+   top:220px;
+   right:70px;
+}
+.two .two_buttom{
+     width: 60px;
+    height: 60px;
+    background: url('../imgs/web-swipe-tip.png'); 
+    background-size: 100% 100%;
+    position:absolute;
+    bottom:20px;
+    left:180px;
+     animation:mymove2 2s linear infinite;
+}
+@keyframes mymove2{
+    from{transform: translate(0px,0px); opacity: 0.3;}
+    to{transform: translate(0px,20px); opacity: 1;}
+ }
+
+
+/* 这是第三屏 */
+.three{
+    background: url('../imgs/bg8.jpg');
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.three .music3 img{
+    width: 40px;
+    /* height: 20px; */
+    /* margin: 10px 10px 0px 350px; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+   animation-name: imageRoll;
+   animation-duration: 4s;
+   animation-timing-function: linear;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+}
+@keyframes imageRoll{
+    to{transform: rotate(720deg);}
+}
+.three-title{
+    font-size:30px;
+    color:white;
+    width:250px;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    border:2px dashed #ccc;
+    /* margin:-500px 20px 0 20px; */
+    position:absolute;
+    top:65px;
+    left:80px;
+}
+.three-img1 img{
+    width:80px;
+    /* height:80px; */
+    position:absolute;
+    left:50px;
+    top:180px;
+}
+.three-contain1{
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:200px;
+    left:180px;
+}
+.three-img2 img{
+    width:80px;
+    position:absolute;
+    left:50px;
+    top:270px;
+}
+.three-contain2{
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:290px;
+    left:180px;
+}
+.three-img3 img{
+    width:80px;
+    position:absolute;
+    left:50px;
+    top:360px;
+}
+.three-contain3{
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:380px;
+    left:180px;
+}
+.three-img4 img{
+    width:80px;
+    position:absolute;
+    left:50px;
+    top:450px;
+}
+.three-contain4{
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:470px;
+    left:220px;
+}
+.three-img5 img{
+    width:80px;
+    position:absolute;
+    left:50px;
+    top:540px;
+}
+.three-contain5{
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:560px;
+    left:210px;
+}
+.three-buttom{
+     width: 60px;
+    height: 60px;
+    background: url('../imgs/web-swipe-tip.png'); 
+    background-size: 100% 100%;
+    position:absolute;
+    bottom:20px;
+    left:180px;
+     animation:mymove3 2s linear infinite;
+}
+@keyframes mymove3{
+    from{transform: translate(0px,0px); opacity: 0.3;}
+    to{transform: translate(0px,20px); opacity: 1;}
+ }
+
+ /* 这是第四屏 */
+.four{
+    background: url('../imgs/bg7.jpg');
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.four .music4 img{
+    width: 40px;
+    /* height: 20px; */
+    /* margin: 10px 10px 0px 350px; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+   animation-name: imageRoll;
+   animation-duration: 4s;
+   animation-timing-function: linear;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+}
+@keyframes imageRoll{
+    to{transform: rotate(720deg);}
+}
+.four-title{
+    font-size:30px;
+    color:white;
+    width:250px;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    border:2px dashed #ccc;
+    /* margin:-500px 20px 0 20px; */
+    position:absolute;
+    top:50px;
+    left:80px;
+}
+.four-containLeft{
+    color:white;
+    text-align:left;
+    position:absolute;
+    width:40%;
+    height:60%;
+    top:180px;
+    left:10px;
+    float:left;
+
+}
+.four-containLeft1{
+margin-bottom:60px;
+}
+.four-containLeft2{
+margin-bottom:60px;
+}
+.four-containLeft3{
+margin-bottom:60px;
+}
+/* 下面是中间的一条线 */
+.line{
+    width:3px;
+    height:440px;
+    background:#3495a6;
+    position:absolute;
+    top:140px;
+    left:207px;
+    
+}
+@keyframes lin{
+    0%{
+        height:0px;
+    }
+    25%{
+        height:100px;
+    }
+    50%{
+        height:200px;
+    }
+    75%{
+        height:300px;
+    }
+    100%{
+        height:400px;
+    }
+
+}
+.circle{
+    width:20px;
+    height: 20px;
+    border-radius: 40px;
+}
+.circle1{
+    background: cyan;
+    position: absolute;
+    bottom:530px;
+    left:198px;
+}
+.circle2{
+    background: cyan;
+    position: absolute;
+    bottom:425px;
+    left:198px;
+}
+.circle3{
+    background: cyan;
+    position: absolute;
+    bottom:320px;
+    left:198px;
+}
+.circle4{
+    background: cyan;
+    position: absolute;
+    bottom:210px;
+    left:198px;
+}
+
+
+
+
+.four-right{
+    color:white;
+    text-align:left;
+    position:absolute;
+    width:40%;
+    height:60%;
+    top:180px;
+    left:240px;
+    float:left;
+}
+.four-right1{
+    margin-bottom:85px;
+}
+.four-right2{
+    margin-bottom:85px;
+}
+.four-right3{
+    margin-bottom:85px;
+}
+.four-bottom{
+     width: 60px;
+    height: 60px;
+    background: url('../imgs/web-swipe-tip.png'); 
+    background-size: 100% 100%;
+    position:absolute;
+    bottom:20px;
+    left:180px;
+     animation:mymove4 2s linear infinite;
+}
+@keyframes mymove4{
+    from{transform: translate(0px,0px); opacity: 0.3;}
+    to{transform: translate(0px,20px); opacity: 1;}
+ }
+
+
+ /* 这是第五屏 */
+
+.five{
+    background: url('../imgs/bg9.jpg');
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.five .music5 img{
+    width: 40px;
+    /* height: 20px; */
+    /* margin: 10px 10px 0px 350px; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+   animation-name: imageRoll;
+   animation-duration: 4s;
+   animation-timing-function: linear;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+}
+@keyframes imageRoll{
+    to{transform: rotate(720deg);}
+}
+.five-contact{
+    width:280px;
+    height:60px;
+    font-size:30px;
+    letter-spacing:15px;
+    color:white;
+    line-height:60px;
+    text-align:center;
+    border:2px dashed #ccc;
+    position:absolute;
+    top:60px;
+    left:60px;
+}
+.five-detail{
+    text-align:center;
+    font-size:20px;
+    line-height:80px;
+    color:white;
+    position:absolute;
+    top:150px;
+    left:100px;
+}
+.five-bottom{
+      width: 60px;
+    height: 60px;
+    background: url('../imgs/web-swipe-tip.png'); 
+    background-size: 100% 100%;
+    position:absolute;
+    bottom:20px;
+    left:180px;
+     animation:mymove5 2s linear infinite;
+}
+@keyframes mymove5{
+    from{transform: translate(0px,0px); opacity: 0.3;}
+    to{transform: translate(0px,20px); opacity: 1;}
+ }
+
+ /* 这是第六屏 */
+
+.six{
+    background: url('../imgs/bg2.png');
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.six .music6 img{
+    width: 40px;
+    /* height: 20px; */
+    /* margin: 10px 10px 0px 350px; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+   animation-name: imageRoll;
+   animation-duration: 4s;
+   animation-timing-function: linear;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+}
+@keyframes imageRoll{
+    to{transform: rotate(720deg);}
+}
+.six-contain{
+    font-size:30px;
+    letter-spacing:10px;
+    color:white;
+    text-align:center;
+    position:absolute;
+    top:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
